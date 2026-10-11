@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script
+            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js"
+            type="module"
+        ></script>
+    </head>
+
+    <body>
+        <%- include('header.ejs') %>
+
+        <main class="content">
+            <div class="px-5 py-5 text-center"> 
+                <h1 class="display-5 fw-bold text-body-emphasis">Projects</h1>
+                
+                <div class="col-lg-6 mx-auto"> 
+                    <p class="lead mb-4">
+                       Spans areas in machine learning, simulation/programming models, and electronic prototyping
+                    </p> 
+                    
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
+                        <a href="https://github.com/deelorm/deelorm/tree/main"><button type="button" class="btn btn-outline-secondary btn-lg px-4" >GitHub</button> </a>
+                    </div> 
+                </div> 
+            </div>
+            <div class="dice-container">
+                <dotlottie-wc
+                class="dice-anim"
+                src="https://lottie.host/063f962a-df9f-4487-bb11-ddcfe233fa4a/QTOLp6RJCO.lottie"
+                autoplay
+                loop>
+                </dotlottie-wc>
+            </div>
+            
+
+            <div class="container px-4 py-5" id="hanging-icons"> 
+                <h2 class="pb-2 border-bottom">Project Summary</h2> 
+                <div> 
+                    <ul>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/flashing_led_bike">555 Timer Based Integrated Circuit Flashing LEDs</a>
+                            <p>Utilized a 555 timer IC and 2 groups of 6 LEDs to create an alternating flashing mode</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/concurrency_matrix_multiplication">Concurrency modelling in Python</a>
+                            <p>Modelled real-time concurrency control in a multi-threaded environment using matrix multiplication operations. Matrix is a fundamental widely-used data representational format for text, images, audio, and video</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/deadlock_detection_os">Deadlock Detection in a Multi-threaded Enviroment, Python</a>
+                            <p>Implemented a Resource Allocation Graph (RAG) model that detects resource contention in multi-threaded enviroments</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/machine_learning/ML_Python">Machine learning (ML) Neuron models and Data Extraction, Python</a>
+                            <p>Scope of involvements include Python implementations of Adaptive Linear Neuron (Adaline - Stochastic Gradient Descent), Perceptron, 
+                                and data extraction methods (principal component analysis, linear discriminant analysis) on synthetic data, IRIS and MNIST datasets
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/machine_learning/ML_Pytorch">Multi-Layer Neurons Modelling (Deep Neural Nets) and Regression Analysis, PyTorch</a>
+                            <p>Trained multi-layer networks and inferred model prediction accuracy on MNIST dataset and 
+                                analysed the correlation level between fuel consumption and auto specifications (model, year, etc.) using neural regression models on Auto MPG dataset</p>
+                            
+                        </li>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/research/memory%20p_p">Research, Impact Analysis of Memory Scheduling Policy and Addressing Modes on DRAM Performance and Power Utilization</a>
+                            <p>Developed a best-pair simulation method based DRAM operational parameters for buffer management, scheduling policy and its heirarchical structure to compare its power and performance variation levels</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/deelorm/deelorm/tree/main/projects/research/cache%20coherence">Research, Cache Cohrence Model for Multi-Core Systems</a>
+                            <p>Proposed a dual enclaved scheme, cache coherence model and protocol in a configurable (scalable) enviroment, for mulit-core and distributed systems</p>
+                        </li>
+                    </ul>
+                
+                    </div> 
+                </div>
+        </main>
+
+        <%- include('footer.ejs') %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js charset='utf-8'></script>
+    </body>
+
+    
+</html>
